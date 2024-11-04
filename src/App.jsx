@@ -1,29 +1,23 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import ahgLogo from '/ah-gLogo.svg'
+import ahgLogoAnim from './assets/ah-gWriteOn.json'
+import Navbar from './Navbar'
 import './App.css'
+import Lottie from 'react-lottie-player'
 import Message from './topCorner'
 
 
 function App() {
   const [count, setCount] = useState(0)
 
+
   return (
     <>
 
-      <div className='nav'>
+      <Navbar />
 
 
-        <a className="logo">
-          <img src={ahgLogo} alt="AH-G logo" />
-          <p className='logoName'>AH-G .</p>
-        </a>
-
-
-        <a target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
       <div className='page'>
 
         <div>
