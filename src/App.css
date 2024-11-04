@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+
+}
+
+.logo {
+  display: flex;
+
+  align-items: auto;
+  align-content: stretch;
+
+}
+
+.logo img {
+  height: 40px;
+}
+
+
+.logo p {
+  position: relative;
+  margin-top: -10px;
+  flex-shrink: 0;
+
+  padding: 1rem;
+  font-size: 2rem;
+  transform: ;
+}
+
+.page {
+
+  display: flex;
+  background-image: url('/gridBG.svg');
+  height: 100vh;
+
+  border: 1.5px solid;
+  margin: 0 1rem;
+
+
+
+
+}
