@@ -39,7 +39,7 @@ function Navbar() {
             )}
 
             {/* Navigation Links (conditionally rendered) */}
-            <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
+            <ul className={`nav-links  ${menuOpen ? 'open ' : ''} ${showText ? 'fade-in' : ''}`}>
                 <li><a href="#story">The Story</a></li>
                 <li><a href="#creations">Creations</a></li>
                 <li><a href="#alexander">Alexander</a></li>

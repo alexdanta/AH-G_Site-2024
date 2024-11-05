@@ -8,16 +8,17 @@
 }
 
 /* Logo container to limit the Lottie animation width */
-.logo{
+.logo {
     margin: -1rem;
     margin-top: -5rem;
 }
-.logo-container {
+
+/* .logo-container {
     display: flex;
     align-items: center;
     width: 150px;
     overflow: hidden;
-}
+} */
 
 .lottie-logo {
     position: absolute;
@@ -35,6 +36,7 @@
 
 /* Center navigation links and CTA button */
 .nav-links {
+    opacity: 0;
     display: flex;
     list-style: none;
     gap: 1.5rem;
@@ -68,9 +70,10 @@
     background-color: #ff6868;
 }
 
-.cta-mobile{
+.cta-mobile {
     display: none;
 }
+
 /* Hamburger Icon */
 .hamburger {
     display: none;
@@ -85,6 +88,7 @@
 }
 
 @keyframes fadeIn {
+
     to {
         opacity: 1;
     }

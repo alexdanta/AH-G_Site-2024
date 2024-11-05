@@ -21,7 +21,32 @@ function App() {
       <div className='page'>
 
         <div className='Tag'>
-          <h1>tag on the left</h1>
+
+          <div className='TagSection1'>
+            <h1>Assignment</h1>
+            <h1>Unit</h1>
+          </div>
+          <div className='TagSection2'>
+            <div className="tag-row">
+              <h1>DR.BY</h1>
+              <Lottie
+                loop={false}
+                play={false}                     // Keeps the animation paused
+                animationData={ahgLogoAnim}      // Reference the imported animation data
+                goTo={100}
+                className='TagLogo'                       // Set halfway point (adjust as needed)
+
+              />
+            </div>
+            <div className="tag-row">
+              <h1>CH.BY</h1>
+            </div>
+          </div>
+
+
+
+          <div className='TagSection3'><h1>RATING</h1></div>
+
         </div>
 
         <div>

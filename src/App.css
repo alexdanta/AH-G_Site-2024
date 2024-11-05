@@ -1,11 +1,62 @@
 .Tag {
-  border: 1.5px solid ;
+  display: flex;
+
+  justify-content: center;
+
+  border: 1.5px solid;
   background-color: var(--background-color);
-  color: inherit; /* Ensures text color matches the color scheme */
-  padding: 1rem; /* Example padding */
-  
-  
+  color: inherit;
+  padding: 0.5rem;
+  /* Controls spacing around the text */
+  margin: -1.5px;
+  writing-mode: sideways-lr;
+  font-size: 0.5rem;
+
 }
+
+.TagSection1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1.5px solid;
+  /* Adds a border between sections */
+  padding: 1rem;
+}
+
+.TagSection2 {
+  position: relative;
+  flex-direction: column;
+  border-top: 1.5px solid;
+  padding: 1rem;
+
+  /* display: inline-flex; */
+  /* flex-direction: column; */
+  /* gap: 0.5rem; */
+  /* Space between rows */
+}
+
+.TagLogo {
+  position: absolute;
+  /* margin-left: 262; */
+  margin-bottom: 3.5rem;
+  max-height: 0.9rem;
+  transform: rotate(-90deg);
+}
+
+.tag-row {
+  display: flex;
+  /* Aligns items in the row horizontally */
+  align-items: center;
+  /* Centers vertically within the row */
+  gap: 0.5rem;
+
+  /* Space between DR.BY and logo */
+}
+
+
+
+
+
 .page {
   display: flex;
   background-image: url('/gridBG.svg');
@@ -13,27 +64,3 @@
   border: 1.5px solid;
   margin: 0 1rem;
 }
-
-/* Navbar container */
-
-
-
-/* 
-.lottie-logo {
-  display: absolute;
-  max-width: 500px;
-
-  height: auto;
-  margin: 0 1rem;
-
-
-}
-
-.logo p {
-  position: absolute;
-  align-items: center;
-
-  padding: 1.5rem;
-  margin: 0 3rem;
-  font-size: 2rem;
-} */
