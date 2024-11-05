@@ -1,3 +1,7 @@
+/* In index.css or App.css */
+/* @import '~@fortawesome/fontawesome-free/css/all.min.css'; */
+
+
 .Tag {
   display: flex;
 
@@ -9,48 +13,55 @@
   padding: 0.5rem;
   /* Controls spacing around the text */
   margin: -1.5px;
-  writing-mode: sideways-lr;
+  /* writing-mode: sideways-lr; */
   font-size: 0.5rem;
+  max-height: 5rem;
+  /* transform: rotate(-90deg); */
 
 }
 
-.TagSection1 {
+.TagSection1 { 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border-top: 1.5px solid;
-  /* Adds a border between sections */
-  padding: 1rem;
+  /* justify-content: space-between; */
+  border-right: 1.5px solid;
+  /* margin-right: 0.2rem; */
+  padding-right: 1rem;
+  
+  /* padding: 1rem; */
 }
 
-.TagSection2 {
-  position: relative;
+.TagSection2 { 
+  /* position: relative; */
   flex-direction: column;
-  border-top: 1.5px solid;
-  padding: 1rem;
+  border-right: 1.5px solid;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
-  /* display: inline-flex; */
+
+
+} 
+
+
+
+.tag-row {
+  display:inline-flex;
   /* flex-direction: column; */
-  /* gap: 0.5rem; */
-  /* Space between rows */
+  /* align-items: center; */
+  
+  gap: 0.5rem;
+
+  
 }
 
 .TagLogo {
-  position: absolute;
-  /* margin-left: 262; */
-  margin-bottom: 3.5rem;
-  max-height: 0.9rem;
-  transform: rotate(-90deg);
+  width: 15rem;
+  margin-top: -0.5rem;
+  border-bottom: 1px solid;
 }
 
-.tag-row {
-  display: flex;
-  /* Aligns items in the row horizontally */
-  align-items: center;
-  /* Centers vertically within the row */
-  gap: 0.5rem;
-
-  /* Space between DR.BY and logo */
+.TagSection3 {
+  padding-left: 1rem;
 }
 
 

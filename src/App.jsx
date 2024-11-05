@@ -5,6 +5,7 @@ import ahgLogoAnim from './assets/ah-gWriteOn.json'
 import Navbar from './Navbar'
 import './App.css'
 import Lottie from 'react-lottie-player'
+import { FontAwesomeIcon } from '@fontawsesome/react-fontawsesome'
 import Message from './topCorner'
 
 
