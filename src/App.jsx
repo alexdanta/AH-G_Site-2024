@@ -20,7 +20,7 @@ function App() {
 
       <div className='page'>
 
-        <div>
+        <div className='Tag'>
           <h1>tag on the left</h1>
         </div>
 

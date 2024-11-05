@@ -1,3 +1,11 @@
+.Tag {
+  border: 1.5px solid ;
+  background-color: var(--background-color);
+  color: inherit; /* Ensures text color matches the color scheme */
+  padding: 1rem; /* Example padding */
+  
+  
+}
 .page {
   display: flex;
   background-image: url('/gridBG.svg');
