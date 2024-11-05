@@ -5,7 +5,7 @@ import ahgLogoAnim from './assets/ah-gWriteOn.json'
 import Navbar from './Navbar'
 import './App.css'
 import Lottie from 'react-lottie-player'
-import { FontAwesomeIcon } from '@fontawsesome/react-fontawsesome'
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Message from './topCorner'
 
 
@@ -41,6 +41,20 @@ function App() {
             </div>
             <div className="tag-row">
               <h1>CH.BY</h1>
+              <div className="social-links">
+      <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon">
+        <i className="fab fa-instagram"></i> {/* Instagram icon */}
+      </a>
+      <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon">
+        <i className="fab fa-youtube"></i> {/* Youtube icon */}
+      </a>
+      <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon">
+        <i className="fab fa-x-twitter"></i> {/* Twitter icon */}
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon">
+        <i className="fab fa-linkedin-in"></i> {/* LinkedIn icon */}
+      </a>
+    </div>
             </div>
           </div>
 
