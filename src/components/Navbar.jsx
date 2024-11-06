@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Lottie from 'react-lottie-player';
-import ahgLogoAnim from './assets/ah-gWriteOn.json';
+import ContactForm from './ContactForm';
+import ahgLogoAnim from '../assets/ah-gWriteOn.json';
 import './Navbar.css';
 
 function Navbar() {
     const [isPlaying, setIsPlaying] = useState(true);
     const [showText, setShowText] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const [formOpen, setFormOpen] = useState(false); // State for form modal
 
     const handleAnimationComplete = () => {
         setShowText(true);
@@ -16,9 +19,12 @@ function Navbar() {
         setMenuOpen(!menuOpen);
     };
 
+    const openForm = () => setFormOpen(true);
+    const closeForm = () => setFormOpen(false);
+
     return (
         <div className='nav'>
-            <a className="logo">
+            <div className="logo">
                 <Lottie
                     loop={false}
                     play={isPlaying}
@@ -27,9 +33,9 @@ function Navbar() {
                     onComplete={handleAnimationComplete}
                 />
                 {showText && (
-                    <p className='logoName fade-in'>AH-G .</p>
+                    <Link to="/" className='logoName fade-in'>AH-G .</Link>
                 )}
-            </a>
+            </div>
 
             {/* Hamburger Icon */}
             {showText && (
@@ -38,24 +44,27 @@ function Navbar() {
                 </div>
             )}
 
-            {/* Navigation Links (conditionally rendered) */}
-            <ul className={`nav-links  ${menuOpen ? 'open ' : ''} ${showText ? 'fade-in' : ''}`}>
-                <li><a href="#story">The Story</a></li>
-                <li><a href="#creations">Creations</a></li>
-                <li><a href="#alexander">Alexander</a></li>
-                <li><a href="#field-notes">Field Notes</a></li>
-                <li><a href="#connections">Connections</a></li>
+            {/* Navigation Links */}
+            <ul className={`nav-links ${menuOpen ? 'open ' : ''} ${showText ? 'fade-in' : ''}`}>
+                <li><Link to="/TheStory">The Story</Link></li>
+                <li><Link to="/creations">Creations</Link></li>
+                <li><Link to="/alexander">Alexander</Link></li>
+                <li><Link to="/FieldNotes">Field Notes</Link></li>
+                <li><Link to="/connections">Connections</Link></li>
 
                 {/* CTA button inside mobile menu */}
                 <li className="cta-mobile">
-                    <a href="#reach-out" className="cta-button">Reach Out</a>
+                    <button onClick={openForm} className="cta-button">Reach Out</button>
                 </li>
             </ul>
 
             {/* Main CTA button (hidden on mobile) */}
             <div className="cta">
-                <a href="#reach-out" className="cta-button">Reach Out</a>
+                <button onClick={openForm} className="cta-button">Reach Out</button>
             </div>
+
+            {/* Contact Form Modal */}
+            {formOpen && <ContactForm onClose={closeForm} />}
         </div>
     );
 }

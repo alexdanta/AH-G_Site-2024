@@ -9,6 +9,7 @@
 
 /* Logo container to limit the Lottie animation width */
 .logo {
+
     margin: -1rem;
     margin-top: -5rem;
 }
@@ -27,6 +28,8 @@
 }
 
 .logoName {
+    color: inherit;
+    text-decoration: none;
     position: absolute;
     align-items: center;
     padding: 0.5rem;
