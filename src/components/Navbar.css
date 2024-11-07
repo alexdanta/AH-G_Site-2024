@@ -62,6 +62,7 @@
 .cta .cta-button {
     padding: 0.5rem 1rem;
     background-color: #434343;
+    border: none;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -112,6 +113,7 @@
         text-align: center;
         padding: 1rem 0;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 100000;
     }
 
     /* Show links when menu is open */
