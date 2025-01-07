@@ -1,5 +1,6 @@
 .Tag {
-    position: relative;
+    position: sticky; /* Makes it sticky */
+    top: 4.5rem;
     display: flex;
     justify-content: center;
     border: 1.5px solid;
