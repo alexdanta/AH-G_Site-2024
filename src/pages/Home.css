@@ -1,0 +1,77 @@
+.content {
+    position: absolute;
+    margin-right: 2rem;
+    margin-left: 0.5rem;
+
+    /* left: 50%; */
+    /* Center horizontally */
+    /* transform: translate(-50%, -0%); */
+    /* Offset by half its width and height to fully center */
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    justify-content: center;
+    /* Centers children inside the .content container */
+    align-items: center;
+    /* Centers horizontally */
+
+    /* Ensure it is above the video */
+    text-align: center;
+    /* Centers text inside */
+}
+
+.home-video {
+    width: 100%;
+    max-height: 3840px;
+    height: auto;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    aspect-ratio: 16 / 7;
+    /* Adjust this for the desired ratio, e.g., 4:3 or 16:9 */
+    object-fit: cover;
+    /* Ensures the video fills the area without stretching */
+    display: block;
+    /* z-index: -1; */
+
+}
+
+.content h1 {
+    position: absolute;
+
+    Margin-top: -20rem;
+    font-family: Georgia;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* top: 50%; */
+    /* Centers text vertically */
+    /* left: 50%; */
+    /* Centers text horizontally */
+    /* transform: translate(-50%, -50%); */
+    /* Offsets by 50% to center perfectly */
+    color: white;
+    /* Text color (adjust for contrast) */
+    font-size: 10rem;
+
+    /* Adjust font size as needed */
+    text-align: center;
+    /* Centers text */
+    z-index: 1;
+    /* Places text above the video */
+    pointer-events: none;
+}
+
+.content h2 {
+    position: absolute;
+    Margin-top: 25rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    /* Offsets by 50% to center perfectly */
+    color: white;
+    /* Text color (adjust for contrast) */
+    font-size: 4rem;
+    /* Adjust font size as needed */
+    text-align: center;
+    /* Centers text */
+    z-index: 1;
+    /* Places text above the video */
+    pointer-events: none;
+}

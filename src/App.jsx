@@ -9,6 +9,7 @@ import Alexander from './pages/Alexander';
 import FieldNotes from './pages/FieldNotes';
 import Connections from './pages/Connections';
 
+
 import './App.css';
 
 function App() {
@@ -25,7 +26,12 @@ function App() {
 
 
       </Routes>
+
     </Router>
+
+
+
+
   );
 }
 
