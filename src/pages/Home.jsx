@@ -4,6 +4,7 @@ import Tag from '../components/Tag';
 
 import './Home.css'
 import HomeVideo from '../assets/WebLand4k16x92.mp4'
+import AnimVideo from '../assets/WebLandAnim.mp4'
 
 function HomePage() {
     const [count, setCount] = useState(0);
@@ -16,6 +17,8 @@ function HomePage() {
                 <video className='home-video' src={HomeVideo} alt="Video of Alexanders Work" muted autoPlay loop></video>
                 <h1>Design + Art Direction.</h1>
                 <h2>Concerts & Live Events</h2>
+
+                <video className='anim-video' src={AnimVideo} alt="Video of Alexanders Animation Work" muted autoPlay loop></video>
 
                 <div className="card">
                     <button onClick={() => setCount((count) => count + 1)}>

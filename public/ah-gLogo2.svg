@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .85;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        opacity: .8;
+        stroke: #f9c74f;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #277da1;
+      }
+
+      .cls-5 {
+        opacity: .41;
+      }
+
+      .cls-3 {
+        stroke-width: 3px;
+      }
+
+      .cls-6 {
+        fill: #f94144;
+      }
+
+      .cls-7 {
+        opacity: .64;
+      }
+
+      .cls-8 {
+        fill: #90be6d;
+      }
+    </style>
+  </defs>
+  <g id="Colour_letters" data-name="Colour letters">
+    <g class="cls-1">
+      <rect class="cls-8" width="100" height="100"/>
+    </g>
+    <line class="cls-2" x1="100" y1="50" x2="50" y2="50"/>
+    <g id="H">
+      <g class="cls-1">
+        <rect class="cls-8" width="3" height="100"/>
+      </g>
+      <g class="cls-1">
+        <rect class="cls-8" x="97" width="3" height="100"/>
+      </g>
+    </g>
+    <g id="Circle" class="cls-7">
+      <circle class="cls-6" cx="50" cy="50" r="50"/>
+    </g>
+    <line id="_-" data-name="-" class="cls-3" x1="100" y1="51" x2="50" y2="51"/>
+    <g id="Triangle" class="cls-5">
+      <polygon class="cls-4" points="0 100 50 0 100 100 0 100"/>
+    </g>
+    <g class="cls-7">
+      <path class="cls-6" d="M96.89,53c-1.55,24.52-21.99,44-46.89,44S3,75.92,3,50,24.08,3,50,3c12.05,0,23.05,4.56,31.37,12.04l2.02-2.25C74.54,4.84,62.84,0,50,0,22.39,0,0,22.39,0,50s22.39,50,50,50,48.35-20.78,49.9-47h-3.01Z"/>
+    </g>
+    <g id="A" class="cls-5">
+      <polygon class="cls-4" points="50 0 0 100 4 100 50 6.71 96 100 100 100 50 0"/>
+    </g>
+  </g>
+</svg>
